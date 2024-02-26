@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="./styles.css">
+    <audio id="loseSound">
+        <source src="../hangman_sounds/lose_sound.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="winSound">
+        <source src="../hangman_sounds/win_sound.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</head>
+
+<body>
+    <div class="hangman-container">
+        <h1>Hangman Game</h1>
+        <div class="hangman-images">
+            <img id="hangmanImage" src="../hangman_images/hangman0.png" alt="Hangman Image">
+        </div>
+        <div class="word-display" id="wordDisplay"></div>
+        <div id="result" class="result"></div>
+        <div class="keyboard" id="keyboard"></div>
+        <div id="restart-message">
+            Press R to restart!
+        </div>
+        <button id="runHangmanButton">Run Hangman in Python</button>
+        <div class="copyright">made by
+            <label for="" class="fionna">fionnadavoodian</label>
+        </div>
+    </div>
+
+    <script src="./hangman.js"></script>
+</body>
+
+</html>
